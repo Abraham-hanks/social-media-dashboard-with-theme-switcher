@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.dark {
+  background-color: hsl(230, 17%, 14%);
+  color: hsl(0, 0%, 100%);
+}
+
+.light {
+  background-color:  hsl(0, 0%, 100%);
+  color: hsl(230, 17%, 14%);
+}
+
+/* utility */
+.txt-dark {
+  color: hsl(228, 34%, 66%);
+}
+
+.txt-light {
+ color: hsl(228, 12%, 44%);
+}
+
+.txt-green {
+  color: hsl(163, 72%, 41%);
+}
+
+.txt-red {
+  color: hsl(356, 69%, 56%);
+}
+
+/* content */
+.container {
+  margin-top: 2.5rem;
+}
+
+/* header */
+.dashboard-title h1 {
+  font-size: 5.9vw;
+  font-weight: 700;
+}
+
+.dashboard-title p, .mode-selector p {
+  font-size: 0.8rem;
+}
+
+.dashboard-title.dark hr {
+  margin-top: 0.5rem;
+  border-color: hsl(228, 34%, 66%);
+}
+
+.dashboard-title.light hr {
+  margin-top: 0.5rem;
+  border-color:hsl(228, 12%, 44%);
+}
+
+.mode-selector .toggle-col {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mode-selector .toggle {
+  height: 25px;
+  width: 50px;
+  border-radius: 1rem;
+  margin-left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-right: 0.2rem;
+  padding-left: 0.2rem;
+}
+
+.mode-selector .toggle-button {
+  height: 20px;
+  width: 21px;
+  display: block;
+  border-radius: 55%;
+}
+
+.mode-selector.dark .toggle {
+  background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
+.mode-selector.dark .toggle-button {
+  background-color: hsl(228, 28%, 20%);
+}
+
+.mode-selector.light .toggle {
+  background: hsl(230, 22%, 74%);
+}
+
+.mode-selector.light .toggle-button {
+  background-color: hsl(0, 0%, 100%);
+}
+
+/* social media section */
+.social-media-section {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-media-section.dark .card, 
+.social-media-section.dark .list-group-item, 
+.overview-section.dark .card, 
+.overview-section.dark .list-group-item {
+  background-color: hsl(228, 28%, 20%);
+}
+
+.social-media-section.light .card, 
+.social-media-section.light .list-group-item, 
+.overview-section.light .card, 
+.overview-section.light .list-group-item {
+  background-color: hsl(227, 47%, 96%);
+}
+
+.social-media-section .card {
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.fb-card, .twitter-card, .ytube-card, .insta-card {
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+  padding-top: 4px;
+}
+
+.fb-card {
+  background-color: hsl(208, 92%, 53%);
+}
+
+.twitter-card {
+  background-color: hsl(203, 89%, 53%);
+}
+
+.insta-card {
+  background-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+
+.ytube-card {
+  background-color: hsl(348, 97%, 39%);
+}
+
+.social-media-section .list-group-item {
+  padding-bottom: 0;
+}
+
+.social-media-section .username {
+  font-size: 0.8rem;
+  padding-left: 0.3rem;
+}
+
+.social-media-section .follower-count {
+  display: block;
+  font-size: 3.3rem;
+  margin-bottom: -10px;
+}
+
+.social-media-section .list-group .follower-txt {
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+}
+
+.social-media-section .daily-count-up{
+  color: hsl(163, 72%, 41%);
+  font-size: 0.7rem;
+}
+
+.social-media-section .daily-count-down{
+  color: hsl(356, 69%, 56%);
+  font-size: 0.7rem;
+}
+
+/* overview section */
+.overview-section {
+  margin-bottom: 2rem;
+}
+
+.overview-section .title{
+  font-size: 5.9vw;
+  font-weight: 700;
+}
+
+.overview-section .list-group-item {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0;
+}
+
+.overview-section .count {
+  font-size: 1.9rem;
+}
+
+.overview-section .card-body {
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0.55rem;
+}
+
+.overview-section .list-group-item .percentage {
+  display: inline-flex;
+  align-items: center;
+}
+
+.overview-section .row div {
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .dashboard-title.light hr,
+  .dashboard-title.dark hr {
+    display: none;
+  }
+
+  .dashboard-title h1 {
+    font-size: 2.5vw;
+  }
+
+  .overview-section .title {
+    font-size: 2.5vw;
+  }
+
+  .mode-selector .toggle-col {
+    display: block;
+  }
+
+  .mode-selector .col-9 {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0.4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .social-media-section .follower-count {
+    font-size: 3.9vw;
+  }
+
+  .social-media-section .list-group .follower-txt {
+    font-size: 0.64rem;
+  }
+}
