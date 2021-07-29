@@ -70,8 +70,8 @@ body {
 }
 
 .mode-selector .toggle {
-  height: 25px;
-  width: 50px;
+  height: 22px;
+  width: 49px;
   border-radius: 1rem;
   margin-left: -10px;
   display: flex;
@@ -82,8 +82,8 @@ body {
 }
 
 .mode-selector .toggle-button {
-  height: 20px;
-  width: 21px;
+  height: 18px;
+  width: 19px;
   display: block;
   border-radius: 55%;
 }
@@ -173,13 +173,7 @@ body {
   letter-spacing: 0.3rem;
 }
 
-.social-media-section .daily-count-up{
-  color: hsl(163, 72%, 41%);
-  font-size: 0.7rem;
-}
-
-.social-media-section .daily-count-down{
-  color: hsl(356, 69%, 56%);
+.social-media-section .daily-count-up, .social-media-section .daily-count-down{
   font-size: 0.7rem;
 }
 
@@ -225,7 +219,7 @@ body {
   }
 
   .dashboard-title h1 {
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
 
   .overview-section .title {
@@ -244,11 +238,25 @@ body {
 }
 
 @media (min-width: 992px) {
+  .dashboard-title h1 {
+    font-size: 1.7vw;
+    margin-bottom: 0;
+  }
+
+  .overview-section .title {
+    font-size: 1.7vw;
+  }
+
   .social-media-section .follower-count {
-    font-size: 3vw;
+    font-size: 3.7vw;
   }
 
   .social-media-section .list-group .follower-txt {
     font-size: 0.64rem;
+  }
+}
+@media (min-width: 1200px) {
+  .social-media-section .list-group .follower-txt {
+    font-size: 0.8rem;
   }
 }
